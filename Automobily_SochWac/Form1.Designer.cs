@@ -30,28 +30,28 @@
         {
             this.LB_seznam = new System.Windows.Forms.ListBox();
             this.GB_1 = new System.Windows.Forms.GroupBox();
-            this.LB_znacka = new System.Windows.Forms.Label();
-            this.LB_model = new System.Windows.Forms.Label();
-            this.LB_rok_vyroby = new System.Windows.Forms.Label();
-            this.LB_spotreba = new System.Windows.Forms.Label();
-            this.LB_automaticka_prevodovka = new System.Windows.Forms.Label();
-            this.LB_vykon = new System.Windows.Forms.Label();
-            this.LB_palivo = new System.Windows.Forms.Label();
-            this.LB_cena = new System.Windows.Forms.Label();
-            this.TB_model = new System.Windows.Forms.TextBox();
-            this.DTP_rok_vyroby = new System.Windows.Forms.DateTimePicker();
-            this.TB_rok_vyroby = new System.Windows.Forms.TextBox();
-            this.RB_automaticka_prevodovka_ne = new System.Windows.Forms.RadioButton();
-            this.RB_automaticka_prevodovka_ano = new System.Windows.Forms.RadioButton();
-            this.LB_prvek_1 = new System.Windows.Forms.Label();
-            this.LB_prvek_2 = new System.Windows.Forms.Label();
-            this.CB_palivo = new System.Windows.Forms.ComboBox();
-            this.CB_znacka = new System.Windows.Forms.ComboBox();
-            this.TB_vykon = new System.Windows.Forms.TextBox();
-            this.TB_cena = new System.Windows.Forms.TextBox();
-            this.LB_korun_ceskych = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.LB_korun_ceskych = new System.Windows.Forms.Label();
+            this.TB_cena = new System.Windows.Forms.TextBox();
+            this.TB_vykon = new System.Windows.Forms.TextBox();
+            this.CB_znacka = new System.Windows.Forms.ComboBox();
+            this.CB_palivo = new System.Windows.Forms.ComboBox();
+            this.LB_prvek_2 = new System.Windows.Forms.Label();
+            this.LB_prvek_1 = new System.Windows.Forms.Label();
+            this.RB_automaticka_prevodovka_ano = new System.Windows.Forms.RadioButton();
+            this.RB_automaticka_prevodovka_ne = new System.Windows.Forms.RadioButton();
+            this.TB_spotreba = new System.Windows.Forms.TextBox();
+            this.DTP_rok_vyroby = new System.Windows.Forms.DateTimePicker();
+            this.TB_model = new System.Windows.Forms.TextBox();
+            this.LB_cena = new System.Windows.Forms.Label();
+            this.LB_palivo = new System.Windows.Forms.Label();
+            this.LB_vykon = new System.Windows.Forms.Label();
+            this.LB_automaticka_prevodovka = new System.Windows.Forms.Label();
+            this.LB_spotreba = new System.Windows.Forms.Label();
+            this.LB_rok_vyroby = new System.Windows.Forms.Label();
+            this.LB_model = new System.Windows.Forms.Label();
+            this.LB_znacka = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -81,7 +81,7 @@
             this.GB_1.Controls.Add(this.LB_prvek_1);
             this.GB_1.Controls.Add(this.RB_automaticka_prevodovka_ano);
             this.GB_1.Controls.Add(this.RB_automaticka_prevodovka_ne);
-            this.GB_1.Controls.Add(this.TB_rok_vyroby);
+            this.GB_1.Controls.Add(this.TB_spotreba);
             this.GB_1.Controls.Add(this.DTP_rok_vyroby);
             this.GB_1.Controls.Add(this.TB_model);
             this.GB_1.Controls.Add(this.LB_cena);
@@ -98,125 +98,94 @@
             this.GB_1.TabIndex = 1;
             this.GB_1.TabStop = false;
             // 
-            // LB_znacka
+            // button2
             // 
-            this.LB_znacka.AutoSize = true;
-            this.LB_znacka.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_znacka.Location = new System.Drawing.Point(28, 20);
-            this.LB_znacka.Name = "LB_znacka";
-            this.LB_znacka.Size = new System.Drawing.Size(74, 19);
-            this.LB_znacka.TabIndex = 0;
-            this.LB_znacka.Text = "Značka: ";
+            this.button2.Location = new System.Drawing.Point(230, 341);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(220, 86);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Vytvořit";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // LB_model
+            // button1
             // 
-            this.LB_model.AutoSize = true;
-            this.LB_model.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_model.Location = new System.Drawing.Point(70, 52);
-            this.LB_model.Name = "LB_model";
-            this.LB_model.Size = new System.Drawing.Size(65, 19);
-            this.LB_model.TabIndex = 2;
-            this.LB_model.Text = "Model: ";
+            this.button1.Location = new System.Drawing.Point(4, 341);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 86);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Smazat";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // LB_rok_vyroby
+            // LB_korun_ceskych
             // 
-            this.LB_rok_vyroby.AutoSize = true;
-            this.LB_rok_vyroby.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_rok_vyroby.Location = new System.Drawing.Point(15, 113);
-            this.LB_rok_vyroby.Name = "LB_rok_vyroby";
-            this.LB_rok_vyroby.Size = new System.Drawing.Size(107, 19);
-            this.LB_rok_vyroby.TabIndex = 3;
-            this.LB_rok_vyroby.Text = "Rok výroby: ";
+            this.LB_korun_ceskych.AutoSize = true;
+            this.LB_korun_ceskych.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_korun_ceskych.Location = new System.Drawing.Point(354, 295);
+            this.LB_korun_ceskych.Name = "LB_korun_ceskych";
+            this.LB_korun_ceskych.Size = new System.Drawing.Size(30, 19);
+            this.LB_korun_ceskych.TabIndex = 23;
+            this.LB_korun_ceskych.Text = "Kč";
             // 
-            // LB_spotreba
+            // TB_cena
             // 
-            this.LB_spotreba.AutoSize = true;
-            this.LB_spotreba.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_spotreba.Location = new System.Drawing.Point(15, 142);
-            this.LB_spotreba.Name = "LB_spotreba";
-            this.LB_spotreba.Size = new System.Drawing.Size(89, 19);
-            this.LB_spotreba.TabIndex = 4;
-            this.LB_spotreba.Text = "Spotřeba: ";
+            this.TB_cena.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TB_cena.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.TB_cena.Location = new System.Drawing.Point(76, 296);
+            this.TB_cena.Name = "TB_cena";
+            this.TB_cena.Size = new System.Drawing.Size(272, 25);
+            this.TB_cena.TabIndex = 22;
             // 
-            // LB_automaticka_prevodovka
+            // TB_vykon
             // 
-            this.LB_automaticka_prevodovka.AutoSize = true;
-            this.LB_automaticka_prevodovka.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_automaticka_prevodovka.Location = new System.Drawing.Point(15, 177);
-            this.LB_automaticka_prevodovka.Name = "LB_automaticka_prevodovka";
-            this.LB_automaticka_prevodovka.Size = new System.Drawing.Size(209, 19);
-            this.LB_automaticka_prevodovka.TabIndex = 5;
-            this.LB_automaticka_prevodovka.Text = "Automatická převodovka: ";
+            this.TB_vykon.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TB_vykon.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.TB_vykon.Location = new System.Drawing.Point(128, 254);
+            this.TB_vykon.Name = "TB_vykon";
+            this.TB_vykon.Size = new System.Drawing.Size(272, 25);
+            this.TB_vykon.TabIndex = 21;
             // 
-            // LB_vykon
+            // CB_znacka
             // 
-            this.LB_vykon.AutoSize = true;
-            this.LB_vykon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_vykon.Location = new System.Drawing.Point(54, 254);
-            this.LB_vykon.Name = "LB_vykon";
-            this.LB_vykon.Size = new System.Drawing.Size(68, 19);
-            this.LB_vykon.TabIndex = 6;
-            this.LB_vykon.Text = "Výkon: ";
+            this.CB_znacka.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CB_znacka.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.CB_znacka.FormattingEnabled = true;
+            this.CB_znacka.Location = new System.Drawing.Point(108, 18);
+            this.CB_znacka.Name = "CB_znacka";
+            this.CB_znacka.Size = new System.Drawing.Size(272, 26);
+            this.CB_znacka.TabIndex = 20;
             // 
-            // LB_palivo
+            // CB_palivo
             // 
-            this.LB_palivo.AutoSize = true;
-            this.LB_palivo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_palivo.Location = new System.Drawing.Point(54, 219);
-            this.LB_palivo.Name = "LB_palivo";
-            this.LB_palivo.Size = new System.Drawing.Size(66, 19);
-            this.LB_palivo.TabIndex = 7;
-            this.LB_palivo.Text = "Palivo: ";
+            this.CB_palivo.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CB_palivo.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.CB_palivo.FormattingEnabled = true;
+            this.CB_palivo.Location = new System.Drawing.Point(128, 219);
+            this.CB_palivo.Name = "CB_palivo";
+            this.CB_palivo.Size = new System.Drawing.Size(272, 26);
+            this.CB_palivo.TabIndex = 19;
             // 
-            // LB_cena
+            // LB_prvek_2
             // 
-            this.LB_cena.AutoSize = true;
-            this.LB_cena.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_cena.Location = new System.Drawing.Point(15, 297);
-            this.LB_cena.Name = "LB_cena";
-            this.LB_cena.Size = new System.Drawing.Size(59, 19);
-            this.LB_cena.TabIndex = 8;
-            this.LB_cena.Text = "Cena: ";
+            this.LB_prvek_2.AutoSize = true;
+            this.LB_prvek_2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.LB_prvek_2.Location = new System.Drawing.Point(0, 319);
+            this.LB_prvek_2.Name = "LB_prvek_2";
+            this.LB_prvek_2.Size = new System.Drawing.Size(444, 19);
+            this.LB_prvek_2.TabIndex = 18;
+            this.LB_prvek_2.Text = "---------------------------------------------------------------------------------" +
+    "------";
             // 
-            // TB_model
+            // LB_prvek_1
             // 
-            this.TB_model.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TB_model.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.TB_model.Location = new System.Drawing.Point(141, 50);
-            this.TB_model.Name = "TB_model";
-            this.TB_model.Size = new System.Drawing.Size(272, 25);
-            this.TB_model.TabIndex = 12;
-            // 
-            // DTP_rok_vyroby
-            // 
-            this.DTP_rok_vyroby.CalendarForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.DTP_rok_vyroby.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.DTP_rok_vyroby.Location = new System.Drawing.Point(128, 111);
-            this.DTP_rok_vyroby.Name = "DTP_rok_vyroby";
-            this.DTP_rok_vyroby.Size = new System.Drawing.Size(272, 25);
-            this.DTP_rok_vyroby.TabIndex = 13;
-            // 
-            // TB_rok_vyroby
-            // 
-            this.TB_rok_vyroby.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TB_rok_vyroby.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.TB_rok_vyroby.Location = new System.Drawing.Point(128, 143);
-            this.TB_rok_vyroby.Name = "TB_rok_vyroby";
-            this.TB_rok_vyroby.Size = new System.Drawing.Size(272, 25);
-            this.TB_rok_vyroby.TabIndex = 14;
-            // 
-            // RB_automaticka_prevodovka_ne
-            // 
-            this.RB_automaticka_prevodovka_ne.AutoSize = true;
-            this.RB_automaticka_prevodovka_ne.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.RB_automaticka_prevodovka_ne.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.RB_automaticka_prevodovka_ne.Location = new System.Drawing.Point(230, 175);
-            this.RB_automaticka_prevodovka_ne.Name = "RB_automaticka_prevodovka_ne";
-            this.RB_automaticka_prevodovka_ne.Size = new System.Drawing.Size(48, 23);
-            this.RB_automaticka_prevodovka_ne.TabIndex = 15;
-            this.RB_automaticka_prevodovka_ne.TabStop = true;
-            this.RB_automaticka_prevodovka_ne.Text = "Ne";
-            this.RB_automaticka_prevodovka_ne.UseVisualStyleBackColor = true;
+            this.LB_prvek_1.AutoSize = true;
+            this.LB_prvek_1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.LB_prvek_1.Location = new System.Drawing.Point(-4, 78);
+            this.LB_prvek_1.Name = "LB_prvek_1";
+            this.LB_prvek_1.Size = new System.Drawing.Size(444, 19);
+            this.LB_prvek_1.TabIndex = 17;
+            this.LB_prvek_1.Text = "---------------------------------------------------------------------------------" +
+    "------";
             // 
             // RB_automaticka_prevodovka_ano
             // 
@@ -231,93 +200,125 @@
             this.RB_automaticka_prevodovka_ano.Text = "Ano";
             this.RB_automaticka_prevodovka_ano.UseVisualStyleBackColor = true;
             // 
-            // LB_prvek_1
+            // RB_automaticka_prevodovka_ne
             // 
-            this.LB_prvek_1.AutoSize = true;
-            this.LB_prvek_1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.LB_prvek_1.Location = new System.Drawing.Point(-4, 78);
-            this.LB_prvek_1.Name = "LB_prvek_1";
-            this.LB_prvek_1.Size = new System.Drawing.Size(444, 19);
-            this.LB_prvek_1.TabIndex = 17;
-            this.LB_prvek_1.Text = "---------------------------------------------------------------------------------" +
-    "------";
+            this.RB_automaticka_prevodovka_ne.AutoSize = true;
+            this.RB_automaticka_prevodovka_ne.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.RB_automaticka_prevodovka_ne.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.RB_automaticka_prevodovka_ne.Location = new System.Drawing.Point(230, 175);
+            this.RB_automaticka_prevodovka_ne.Name = "RB_automaticka_prevodovka_ne";
+            this.RB_automaticka_prevodovka_ne.Size = new System.Drawing.Size(48, 23);
+            this.RB_automaticka_prevodovka_ne.TabIndex = 15;
+            this.RB_automaticka_prevodovka_ne.TabStop = true;
+            this.RB_automaticka_prevodovka_ne.Text = "Ne";
+            this.RB_automaticka_prevodovka_ne.UseVisualStyleBackColor = true;
             // 
-            // LB_prvek_2
+            // TB_spotreba
             // 
-            this.LB_prvek_2.AutoSize = true;
-            this.LB_prvek_2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.LB_prvek_2.Location = new System.Drawing.Point(0, 319);
-            this.LB_prvek_2.Name = "LB_prvek_2";
-            this.LB_prvek_2.Size = new System.Drawing.Size(444, 19);
-            this.LB_prvek_2.TabIndex = 18;
-            this.LB_prvek_2.Text = "---------------------------------------------------------------------------------" +
-    "------";
+            this.TB_spotreba.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TB_spotreba.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.TB_spotreba.Location = new System.Drawing.Point(128, 143);
+            this.TB_spotreba.Name = "TB_spotreba";
+            this.TB_spotreba.Size = new System.Drawing.Size(272, 25);
+            this.TB_spotreba.TabIndex = 14;
             // 
-            // CB_palivo
+            // DTP_rok_vyroby
             // 
-            this.CB_palivo.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CB_palivo.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.CB_palivo.FormattingEnabled = true;
-            this.CB_palivo.Location = new System.Drawing.Point(128, 219);
-            this.CB_palivo.Name = "CB_palivo";
-            this.CB_palivo.Size = new System.Drawing.Size(272, 26);
-            this.CB_palivo.TabIndex = 19;
+            this.DTP_rok_vyroby.CalendarForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.DTP_rok_vyroby.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DTP_rok_vyroby.Location = new System.Drawing.Point(128, 111);
+            this.DTP_rok_vyroby.Name = "DTP_rok_vyroby";
+            this.DTP_rok_vyroby.Size = new System.Drawing.Size(272, 25);
+            this.DTP_rok_vyroby.TabIndex = 13;
             // 
-            // CB_znacka
+            // TB_model
             // 
-            this.CB_znacka.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CB_znacka.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.CB_znacka.FormattingEnabled = true;
-            this.CB_znacka.Location = new System.Drawing.Point(108, 18);
-            this.CB_znacka.Name = "CB_znacka";
-            this.CB_znacka.Size = new System.Drawing.Size(272, 26);
-            this.CB_znacka.TabIndex = 20;
+            this.TB_model.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TB_model.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.TB_model.Location = new System.Drawing.Point(141, 50);
+            this.TB_model.Name = "TB_model";
+            this.TB_model.Size = new System.Drawing.Size(272, 25);
+            this.TB_model.TabIndex = 12;
             // 
-            // TB_vykon
+            // LB_cena
             // 
-            this.TB_vykon.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TB_vykon.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.TB_vykon.Location = new System.Drawing.Point(128, 254);
-            this.TB_vykon.Name = "TB_vykon";
-            this.TB_vykon.Size = new System.Drawing.Size(272, 25);
-            this.TB_vykon.TabIndex = 21;
+            this.LB_cena.AutoSize = true;
+            this.LB_cena.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_cena.Location = new System.Drawing.Point(15, 297);
+            this.LB_cena.Name = "LB_cena";
+            this.LB_cena.Size = new System.Drawing.Size(59, 19);
+            this.LB_cena.TabIndex = 8;
+            this.LB_cena.Text = "Cena: ";
             // 
-            // TB_cena
+            // LB_palivo
             // 
-            this.TB_cena.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TB_cena.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.TB_cena.Location = new System.Drawing.Point(76, 296);
-            this.TB_cena.Name = "TB_cena";
-            this.TB_cena.Size = new System.Drawing.Size(272, 25);
-            this.TB_cena.TabIndex = 22;
+            this.LB_palivo.AutoSize = true;
+            this.LB_palivo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_palivo.Location = new System.Drawing.Point(54, 219);
+            this.LB_palivo.Name = "LB_palivo";
+            this.LB_palivo.Size = new System.Drawing.Size(66, 19);
+            this.LB_palivo.TabIndex = 7;
+            this.LB_palivo.Text = "Palivo: ";
             // 
-            // LB_korun_ceskych
+            // LB_vykon
             // 
-            this.LB_korun_ceskych.AutoSize = true;
-            this.LB_korun_ceskych.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LB_korun_ceskych.Location = new System.Drawing.Point(354, 295);
-            this.LB_korun_ceskych.Name = "LB_korun_ceskych";
-            this.LB_korun_ceskych.Size = new System.Drawing.Size(30, 19);
-            this.LB_korun_ceskych.TabIndex = 23;
-            this.LB_korun_ceskych.Text = "Kč";
+            this.LB_vykon.AutoSize = true;
+            this.LB_vykon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_vykon.Location = new System.Drawing.Point(54, 254);
+            this.LB_vykon.Name = "LB_vykon";
+            this.LB_vykon.Size = new System.Drawing.Size(68, 19);
+            this.LB_vykon.TabIndex = 6;
+            this.LB_vykon.Text = "Výkon: ";
             // 
-            // button1
+            // LB_automaticka_prevodovka
             // 
-            this.button1.Location = new System.Drawing.Point(4, 341);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 86);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Smazat";
-            this.button1.UseVisualStyleBackColor = true;
+            this.LB_automaticka_prevodovka.AutoSize = true;
+            this.LB_automaticka_prevodovka.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_automaticka_prevodovka.Location = new System.Drawing.Point(15, 177);
+            this.LB_automaticka_prevodovka.Name = "LB_automaticka_prevodovka";
+            this.LB_automaticka_prevodovka.Size = new System.Drawing.Size(209, 19);
+            this.LB_automaticka_prevodovka.TabIndex = 5;
+            this.LB_automaticka_prevodovka.Text = "Automatická převodovka: ";
             // 
-            // button2
+            // LB_spotreba
             // 
-            this.button2.Location = new System.Drawing.Point(230, 341);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 86);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Vytvořit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.LB_spotreba.AutoSize = true;
+            this.LB_spotreba.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_spotreba.Location = new System.Drawing.Point(15, 142);
+            this.LB_spotreba.Name = "LB_spotreba";
+            this.LB_spotreba.Size = new System.Drawing.Size(89, 19);
+            this.LB_spotreba.TabIndex = 4;
+            this.LB_spotreba.Text = "Spotřeba: ";
+            // 
+            // LB_rok_vyroby
+            // 
+            this.LB_rok_vyroby.AutoSize = true;
+            this.LB_rok_vyroby.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_rok_vyroby.Location = new System.Drawing.Point(15, 113);
+            this.LB_rok_vyroby.Name = "LB_rok_vyroby";
+            this.LB_rok_vyroby.Size = new System.Drawing.Size(107, 19);
+            this.LB_rok_vyroby.TabIndex = 3;
+            this.LB_rok_vyroby.Text = "Rok výroby: ";
+            // 
+            // LB_model
+            // 
+            this.LB_model.AutoSize = true;
+            this.LB_model.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_model.Location = new System.Drawing.Point(70, 52);
+            this.LB_model.Name = "LB_model";
+            this.LB_model.Size = new System.Drawing.Size(65, 19);
+            this.LB_model.TabIndex = 2;
+            this.LB_model.Text = "Model: ";
+            // 
+            // LB_znacka
+            // 
+            this.LB_znacka.AutoSize = true;
+            this.LB_znacka.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LB_znacka.Location = new System.Drawing.Point(28, 20);
+            this.LB_znacka.Name = "LB_znacka";
+            this.LB_znacka.Size = new System.Drawing.Size(74, 19);
+            this.LB_znacka.TabIndex = 0;
+            this.LB_znacka.Text = "Značka: ";
             // 
             // groupBox1
             // 
@@ -415,7 +416,7 @@
         private System.Windows.Forms.Label LB_prvek_1;
         private System.Windows.Forms.RadioButton RB_automaticka_prevodovka_ano;
         private System.Windows.Forms.RadioButton RB_automaticka_prevodovka_ne;
-        private System.Windows.Forms.TextBox TB_rok_vyroby;
+        private System.Windows.Forms.TextBox TB_spotreba;
         private System.Windows.Forms.DateTimePicker DTP_rok_vyroby;
         private System.Windows.Forms.TextBox TB_model;
         private System.Windows.Forms.GroupBox groupBox1;
